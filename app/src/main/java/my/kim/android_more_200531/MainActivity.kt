@@ -16,7 +16,6 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
-
         moveBtn
         )
     }
@@ -25,6 +24,21 @@ class MainActivity : BaseActivity() {
         super.onResume()
 
         Log.d("메인화면", "onResume실행")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("메인화면", "onpause실행")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("메인화면", "onstop실행")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("메인화면", "onpdestory실행")
     }
 
     override fun setValues() {
